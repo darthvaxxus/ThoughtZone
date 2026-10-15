@@ -31,13 +31,13 @@ const {
 const ADMIN_EMAIL = "tharunkarthickdev@icloud.com";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCCSD0WTnSfndJbGvBUKlozhctR27Llp5g",
-  authDomain: "test-blogsite.firebaseapp.com",
-  projectId: "test-blogsite",
-  storageBucket: "test-blogsite.firebasestorage.app",
-  messagingSenderId: "322078961129",
-  appId: "1:322078961129:web:fcab7bec4ee95dd56d6f78",
-  measurementId: "G-696YZZZTK3"
+  apiKey: "AIzaSyBqge0rMlZpo4iPW5kPzv1wOdZxuVYLals",
+  authDomain: "thoughtzone-tk.firebaseapp.com",
+  projectId: "thoughtzone-tk",
+  storageBucket: "thoughtzone-tk.firebasestorage.app",
+  messagingSenderId: "285134975338",
+  appId: "1:285134975338:web:db5f6e0c3644481bad7513",
+  measurementId: "G-LT2PLWKT0E"
 };
 
 const app = initializeApp(firebaseConfig);

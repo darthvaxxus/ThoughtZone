@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <title>ThoughtZone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="banner">
+    <h1 class="brand">ThoughtZone</h1>
+
+    <div id="auth-portal" class="auth-portal">
+
+      <div id="auth-out" class="auth-out">
+        <a href="auth.html" class="btn-nav">
+          Log In / Sign Up
+        </a>
+      </div>
+
+      <div id="auth-in" class="auth-in" hidden>
+        <span id="user-label" class="user-label"></span>
+        <span id="user-badge" class="badge"></span>
+        <button
+          id="btn-logout"
+          type="button"
+          class="ghost">
+          Log out
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <div id="verify-bar" class="verify-bar" hidden>
+    <span>
+      Check your inbox and spam folder and click the verification
+      link to unlock commenting.
+    </span>
+    <button id="btn-resend" type="button">
+      Resend email
+    </button>
+    <button id="btn-refresh" type="button">
+      I have verified
+    </button>
+  </div>
+
+  <p id="auth-msg" class="msg" role="status"></p>
+
+  <main class="page">
+
+    <section
+      id="author-panel"
+      class="author-panel"
+      hidden>
+      <h2 id="author-heading">Author Entry</h2>
+      <form id="author-form">
+        <label for="post-title">Title</label>
+        <input
+          id="post-title"
+          type="text"
+          maxlength="150"
+          required>
+        <label for="post-body">Body</label>
+        <textarea
+          id="post-body"
+          rows="8"
+          required></textarea>
+        <div class="row">
+          <button id="btn-publish" type="submit">
+            Publish post
+          </button>
+          <button
+            id="btn-cancel"
+            type="button"
+            class="ghost"
+            hidden>
+            Cancel edit
+          </button>
+        </div>
+        <p id="author-msg" class="msg"></p>
+      </form>
+    </section>
+
+    <section id="feed" class="feed" aria-live="polite">
+      <p class="empty">Loading posts...</p>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <p>ThoughtZone</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

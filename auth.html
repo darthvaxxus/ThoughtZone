@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <title>Account Portal - ThoughtZone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="banner">
+    <h1 class="brand">ThoughtZone</h1>
+  </header>
+
+  <main class="page">
+    <section class="auth-card">
+      <h2 id="auth-title">Log In</h2>
+
+      <form id="auth-form">
+        <label for="auth-email">Email Address</label>
+        <input
+          id="auth-email"
+          type="email"
+          placeholder="name@example.com"
+          autocomplete="email"
+          required>
+
+        <label for="auth-pass" id="lbl-pass">
+          Password
+        </label>
+        <input
+          id="auth-pass"
+          type="password"
+          placeholder="Password (6+ characters)"
+          autocomplete="current-password"
+          minlength="6"
+          required>
+
+        <div class="row auth-actions">
+          <button id="btn-submit" type="submit">
+            Log In
+          </button>
+          <button
+            id="btn-toggle"
+            type="button"
+            class="ghost">
+            Need an account? Sign Up
+          </button>
+        </div>
+
+        <div class="auth-links">
+          <button
+            id="btn-forgot"
+            type="button"
+            class="link-btn">
+            Forgot Password?
+          </button>
+        </div>
+      </form>
+
+      <p id="auth-msg" class="msg" role="status"></p>
+
+      <div class="auth-foot">
+        <a href="index.html">&larr; Back to Feed</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>ThoughtZone</p>
+  </footer>
+
+  <script type="module" src="auth.js"></script>
+</body>
+</html>
